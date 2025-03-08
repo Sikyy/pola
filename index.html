@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div data-i18n="free_shipping">WOW</div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container main-header">
+            <div class="logo">
+                <a href="index.html">POLA</a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="#" data-i18n="new_arrivals">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-i18n="classic_collection">Classic Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" data-i18n="spring_summer">Spring/Summer 2025</a>
+                    </li>
+                    <li class="nav-item"><a href="#" data-i18n="fall_winter">Fall/Winter 2025</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
+                <div class="language-selector">
+                    <button class="language-toggle">
+                        <span class="current-lang">English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="#" class="language-option">中文</a>
+                        <a href="#" class="language-option active">English</a>
+                        <a href="#" class="language-option">Русский</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="menu-close"><i class="fas fa-times"></i></button>
+        <nav class="mobile-nav">
+            <ul>
+                <li>
+                    <a href="#" data-i18n="sunglasses">Sunglasses</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="eyeglasses">Eyeglasses</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="collections">Collections</a>
+                </li>
+                <li><a href="#" data-i18n="sale">Sale</a></li>
+                <li><a href="#" data-i18n="my_account">My Account</a></li>
+                <li><a href="#" data-i18n="contact_us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <h2 class="search-title" data-i18n="search">Search</h2>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="search-form">
+                <input type="text" class="search-input" data-i18n="search_placeholder" placeholder="Search for products...">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2 class="cart-title">Your Cart (0)</h2>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <p style="text-align: center; color: var(--gray-dark);" data-i18n="cart_empty">Your cart is empty</p>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-subtotal">
+                <span data-i18n="subtotal">Subtotal</span>
+                <span class="subtotal-price">€0.00</span>
+            </div>
+            <div class="cart-buttons">
+                <button class="cart-btn checkout-btn" data-i18n="checkout">Checkout</button>
+                <button class="cart-btn view-cart-btn" data-i18n="view_cart">View Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 data-i18n="hero_title">SPRING SUMMER<br>COLLECTION 2025</h1>
+            <p data-i18n="hero_text">Discover our latest designs with premium materials and cutting-edge style. Elevate your look with the perfect pair of POLA sunglasses.</p>
+            <a href="#" class="btn" data-i18n="shop_collection">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- Collection Banner -->
+    <section class="collection-banner">
+        <div class="container">
+            <div class="banner-grid">
+                <div class="banner-item">
+                    <img src="img/man-1.jpg" alt="Men's Collection" class="banner-image">
+                    <div class="banner-content">
+                        <h2 class="banner-title" data-i18n="mens_collection">Men's Collection</h2>
+                        <a href="#" class="btn banner-btn" data-i18n="shop_now">Shop Now</a>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <img src="img/woman-1.jpg" alt="Women's Collection" class="banner-image">
+                    <div class="banner-content">
+                        <h2 class="banner-title" data-i18n="womens_collection">Women's Collection</h2>
+                        <a href="#" class="btn banner-btn" data-i18n="shop_now">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="best_sellers">Best Sellers</h2>
+                <p class="section-subtitle" data-i18n="best_sellers_subtitle">Our most popular styles loved by customers worldwide</p>
+            </div>
+            
+            <div class="product-filter">
+                <button class="filter-btn active" data-i18n="all">All</button>
+                <button class="filter-btn" data-i18n="new_arrivals_filter">New Arrivals</button>
+                <button class="filter-btn" data-i18n="polarized_filter">Polarized</button>
+                <button class="filter-btn" data-i18n="limited_edition_filter">Limited Edition</button>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">Bestseller</span>
+                        <img src="img/1-1.jpg" alt="Matte Black Classic" class="product-image">
+                        <img src="img/1-2.jpg" alt="Matte Black Classic - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Classic</div>
+                        <h3 class="product-title"><a href="#">Matte Black Classic</a></h3>
+                        <div class="product-price">€59.00</div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #000000"></div>
+                            <div class="color-option" style="background-color: #3d85c6"></div>
+                            <div class="color-option" style="background-color: #b45f06"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">-20%</span>
+                        <img src="img/2-1.jpg" alt="Gold Aviator" class="product-image">
+                        <img src="img/2-2.jpg" alt="Gold Aviator - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Aviator</div>
+                        <h3 class="product-title"><a href="#">Gold Aviator</a></h3>
+                        <div class="product-price">
+                            <span class="original-price">€75.00</span>
+                            €60.00
+                        </div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #d4af37"></div>
+                            <div class="color-option" style="background-color: #c0c0c0"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="img/3-1.jpg" alt="Retro Round" class="product-image">
+                        <img src="img/3-2.jpg" alt="Retro Round - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Round</div>
+                        <h3 class="product-title"><a href="#">Retro Round</a></h3>
+                        <div class="product-price">€65.00</div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #6d351a"></div>
+                            <div class="color-option" style="background-color: #000000"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">New</span>
+                        <img src="img/4-1.jpg" alt="Modern Cat Eye" class="product-image">
+                        <img src="img/4-2.jpg" alt="Modern Cat Eye - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cat Eye</div>
+                        <h3 class="product-title"><a href="#">Modern Cat Eye</a></h3>
+                        <div class="product-price">€69.00</div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #f6b26b"></div>
+                            <div class="color-option" style="background-color: #000000"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">Polarized</span>
+                        <img src="img/5-1.jpg" alt="Polarized Sport" class="product-image">
+                        <img src="img/5-2.jpg" alt="Polarized Sport - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Sport</div>
+                        <h3 class="product-title"><a href="#">Polarized Sport</a></h3>
+                        <div class="product-price">€79.00</div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #000000"></div>
+                            <div class="color-option" style="background-color: #38761d"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="img/6-1.jpg" alt="Classic Wayfarer" class="product-image">
+                        <img src="img/6-2.jpg" alt="Classic Wayfarer - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Wayfarer</div>
+                        <h3 class="product-title"><a href="#">Classic Wayfarer</a></h3>
+                        <div class="product-price">€55.00</div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #000000"></div>
+                            <div class="color-option" style="background-color: #6d351a"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">Limited</span>
+                        <img src="img/7-1.jpg" alt="Mirrored Hexagon" class="product-image">
+                        <img src="img/7-2.jpg" alt="Mirrored Hexagon - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Limited Edition</div>
+                        <h3 class="product-title"><a href="#">Mirrored Hexagon</a></h3>
+                        <div class="product-price">€85.00</div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #3d85c6"></div>
+                            <div class="color-option" style="background-color: #e06666"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">-15%</span>
+                        <img src="img/8-1.jpg" alt="Square Oversized" class="product-image">
+                        <img src="img/8-2.jpg" alt="Square Oversized - Side View" class="product-image-hover">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="product-action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="product-action-btn quick-view-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Oversized</div>
+                        <h3 class="product-title"><a href="#">Square Oversized</a></h3>
+                        <div class="product-price">
+                            <span class="original-price">€65.00</span>
+                            €55.25
+                        </div>
+                        <div class="product-colors">
+                            <div class="color-option" style="background-color: #000000"></div>
+                            <div class="color-option" style="background-color: #6aa84f"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <a href="#" class="btn btn-outline" data-i18n="view_all_products">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="shop_by_style">Shop By Style</h2>
+                <p class="section-subtitle" data-i18n="find_perfect_pair">Find the perfect pair for your face shape and personal style</p>
+            </div>
+            
+            <div class="category-grid">
+                <!--1-->
+                <div class="category-card">
+                    <img src="img/AVIATOR.jpg" alt="Aviator" class="category-image">
+                    <h3 class="category-title" data-i18n="aviator">Aviator</h3>
+                    <a href="#" class="category-link"></a>
+                </div>
+                <!--2-->
+                <div class="category-card">
+                    <img src="img/sport.jpg" alt="Sport" class="category-image">
+                    <h3 class="category-title" data-i18n="sport">Sport</h3>
+                    <a href="#" class="category-link"></a>
+                </div>
+                <!--3-->
+                <div class="category-card">
+                    <img src="img/cateye.jpg" alt="Cat Eye" class="category-image">
+                    <h3 class="category-title" data-i18n="cat_eye">Cat Eye</h3>
+                    <a href="#" class="category-link"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features_shipping">Free Shipping</h3>
+                    <p class="feature-text" data-i18n="features_shipping_text">Free shipping on all orders over €50</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features_returns">Easy Returns</h3>
+                    <p class="feature-text" data-i18n="features_returns_text">30 days free returns policy</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features_payments">Secure Payments</h3>
+                    <p class="feature-text" data-i18n="features_payments_text">100% secure payment methods</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features_support">24/7 Support</h3>
+                    <p class="feature-text" data-i18n="features_support_text">Dedicated customer support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <div class="section-header"
+            <h2 class="section-title">@pola</h2>
+            <p class="section-subtitle" data-i18n="section_support_subtitle">Follow us on Instagram and tag your photos with #pola</p>
+        </div>
+        
+        <div class="instagram-grid">
+            <!--1-->
+            <div class="instagram-item">
+                <img src="img/ins-1.jpg" alt="Instagram Photo" class="instagram-image">
+                <div class="instagram-overlay">
+                    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <!--2-->
+            <div class="instagram-item">
+                <img src="img/ins-2.jpg" alt="Instagram Photo" class="instagram-image">
+                <div class="instagram-overlay">
+                    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <!--3-->
+            <div class="instagram-item">
+                <img src="img/ins-3.jpg" alt="Instagram Photo" class="instagram-image">
+                <div class="instagram-overlay">
+                    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <!--4-->
+            <div class="instagram-item">
+                <img src="img/ins-4.jpg" alt="Instagram Photo" class="instagram-image">
+                <div class="instagram-overlay">
+                    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <!--5-->
+            <div class="instagram-item">
+                <img src="img/ins-5.jpg" alt="Instagram Photo" class="instagram-image">
+                <div class="instagram-overlay">
+                    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <!--6-->
+            <div class="instagram-item">
+                <img src="img/ins-6.jpg" alt="Instagram Photo" class="instagram-image">
+                <div class="instagram-overlay">
+                    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title" data-i18n="newsletter_title">Subscribe to Our Newsletter</h2>
+                <p class="newsletter-text" data-i18n="newsletter_text">Sign up for our newsletter to receive exclusive offers, new arrivals, and style inspiration directly to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" data-i18n="newsletter_placeholder" data-i18n-attr="placeholder" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn" data-i18n="newsletter_button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column footer-about">
+                    <h3 data-i18n="about_pola_taitle">About POLA</h3>
+                    <p data-i18n="about_pola_text">Founded in 2013, POLA has revolutionized the sunglasses industry by offering high-quality designer sunglasses at affordable prices. Our mission is to provide stylish, durable eyewear that doesn't break the bank.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="shop_foot">Shop</h3>
+                    <ul>
+                        <li data-i18n="New_Arrivals_foot"><a href="#">New Arrivals</a></li>
+                        <li data-i18n="Classic_foot"><a href="#">Classic Collection</a></li>
+                        <li data-i18n="Spring_Summer_foot"><a href="#">Spring/Summer 2025</a></li>
+                        <li data-i18n="Fall_Winter_foot"><a href="#">Fall/Winter 2025</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="help_foot">Help</h3>
+                    <ul>
+                        <li data-i18n="FAQ_foot"><a href="#">FAQs</a></li>
+                        <li data-i18n="Size_Guide_foot"><a href="#">Size Guide</a></li>
+                        <li data-i18n="privacy_policy_foot"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="contact_us_foot">Contact US</h3>
+                    <ul>
+                        <li><a href="mailto:support@pola.com">support@pola.com</a></li>
+                        <!-- <li><a href="tel:+34900000000">+34 900 000 000</a></li> -->
+                    </ul>
+                    <!-- <h3 style="margin-top: 30px;">Download App</h3>
+                    <div class="app-download">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store"></a>
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 POLA. All rights reserved. <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sunglasses" class="main-image">
+                    <div class="thumbnail-slider">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Sunglasses" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Sunglasses" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Sunglasses" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Sunglasses" class="thumbnail">
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2 class="modal-title" data-i18n="classic">Classic</h2>
+                    <div class="modal-price">€59.00</div>
+                    <div class="modal-description">
+                        <p data-i18n="product_description">Classic design with a modern twist. These matte black sunglasses feature polarized lenses that reduce glare and enhance visual clarity. The lightweight frame ensures all-day comfort, while the timeless design complements any outfit.</p>
+                    </div>
+                    <div class="modal-variants">
+                        <div class="variant-title" data-i18n="frame_color">Frame Color</div>
+                        <div class="color-options">
+                            <div class="color-option selected" style="background-color: #000000"></div>
+                            <div class="color-option" style="background-color: #3d85c6"></div>
+                            <div class="color-option" style="background-color: #b45f06"></div>
+                        </div>
+                        <div class="variant-title" data-i18n="lens_type">Lens Type</div>
+                        <div class="variant-options">
+                            <div class="variant-option selected" data-i18n="standard">Standard</div>
+                            <div class="variant-option" data-i18n="polarized">Polarized (+€10)</div>
+                            <div class="variant-option" data-i18n="mirrored">Mirrored (+€8)</div>
+                        </div>
+                    </div>
+                    <div class="modal-quantity">
+                        <div class="quantity-label" data-i18n="quantity">Quantity</div>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="add-to-cart-btn" data-i18n="add_to_cart">Add to Cart</button>
+                        <button class="wishlist-btn" data-i18n="add_to_wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="meta-item"><span data-i18n="sku">SKU</span>: <span>HAW-BLK-001</span></div>
+                        <div class="meta-item"><span data-i18n="categories">Categories</span>: <span>Sunglasses, Classic</span></div>
+                        <div class="meta-item"><span data-i18n="tags">Tags</span>: <span>Black, Classic, Polarized</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
