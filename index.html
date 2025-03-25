@@ -479,7 +479,7 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="newsletter">
+    <!-- <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
                 <h2 class="newsletter-title" data-i18n="newsletter_title">Subscribe to Our Newsletter</h2>
@@ -490,7 +490,54 @@
                 </form>
             </div>
         </div>
+    </section> -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title" data-i18n="newsletter_title">Subscribe to Our Newsletter</h2>
+                <p class="newsletter-text" data-i18n="newsletter_text">Sign up for our newsletter to receive exclusive offers, new arrivals, and style inspiration directly to your inbox.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" id="emailInput" data-i18n="newsletter_placeholder" data-i18n-attr="placeholder" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn" data-i18n="newsletter_button">Subscribe</button>
+                </form>
+                <p id="message" class="newsletter-message"></p> <!-- 添加消息提示 -->
+            </div>
+        </div>
     </section>
+
+    <!-- 新加上的邮件js -->
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = document.getElementById("emailInput").value;
+        const message = document.getElementById("message");
+
+        message.textContent = "发送中...";
+
+        try {
+            const response = await fetch("https://send-pola-email.siky.workers.dev", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    to: email,
+                    subject: "欢迎订阅我们的新闻简讯",
+                    body: "感谢您订阅我们的新闻简讯！您将收到独家优惠、新品资讯和时尚灵感。"
+                }),
+            });
+
+            const result = await response.json(); // 总是解析响应体
+            if (response.ok) {
+                message.textContent = "订阅成功！请检查您的邮箱。";
+                document.getElementById("emailInput").value = "";
+            } else {
+                message.textContent = `订阅失败: ${result.message || "未知错误"}`;
+            }
+        } catch (error) {
+            message.textContent = `请求失败: ${error.message}`;
+            console.error("Fetch error:", error); // 输出详细错误到控制台
+        }
+    });
+    </script>
 
     <!-- Footer -->
     <footer>
