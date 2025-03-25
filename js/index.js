@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const cartToggle = document.querySelector('.cart-toggle');
     const cartSidebar = document.querySelector('.cart-sidebar');
     const cartClose = document.querySelector('.cart-close');
-    const quickViewBtns = document.querySelectorAll('.quick-view-btn');
+    //const quickViewBtns = document.querySelectorAll('.quick-view-btn');
     const quickViewModal = document.querySelector('.quick-view-modal');
     const modalClose = document.querySelector('.modal-close');
     const modalOverlay = document.querySelector('.modal-overlay');
@@ -153,17 +153,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Quick View Modal
-    if (quickViewBtns && quickViewModal) {
-        quickViewBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                quickViewModal.style.display = 'block';
-                quickViewModal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-    }
+    // if (quickViewBtns && quickViewModal) {
+    //     quickViewBtns.forEach(btn => {
+    //         btn.addEventListener('click', (e) => {
+    //             e.preventDefault();
+    //             e.stopPropagation();
+    //             quickViewModal.style.display = 'block';
+    //             quickViewModal.classList.add('active');
+    //             document.body.style.overflow = 'hidden';
+    //         });
+    //     });
+    // }
 
     if (modalClose && quickViewModal) {
         modalClose.addEventListener('click', () => {
