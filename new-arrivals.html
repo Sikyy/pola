@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - POLA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div data-i18n="free_shipping">New Arrivals</div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container main-header">
+            <div class="logo">
+                <a href="index.html">POLA</a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="new-arrivals.html" class="active" data-i18n="new_arrivals">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="classic-collection.html" data-i18n="classic_collection">Classic Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="spring-summer.html" data-i18n="spring_summer">Spring/Summer 2025</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fall-winter.html" data-i18n="fall_winter">Fall/Winter 2025</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
+                <div class="language-selector">
+                    <button class="language-toggle">
+                        <span class="current-lang">English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="#" class="language-option">中文</a>
+                        <a href="#" class="language-option active">English</a>
+                        <a href="#" class="language-option">Русский</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="collection-page">
+            <div class="container">
+                <div class="collection-header">
+                    <h1 class="collection-title">New Arrivals</h1>
+                    <div class="collection-total">
+                        <span>6 Products</span>
+                        <div class="collection-sort">
+                            <span>Sort by: Newest</span>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="sort-dropdown">
+                                <label class="sort-option active">
+                                    <input type="radio" name="sort" value="newest" checked>
+                                    <span>Newest</span>
+                                </label>
+                                <label class="sort-option">
+                                    <input type="radio" name="sort" value="price-high">
+                                    <span>Price: High to Low</span>
+                                </label>
+                                <label class="sort-option">
+                                    <input type="radio" name="sort" value="price-low">
+                                    <span>Price: Low to High</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column footer-about">
+                    <h3 data-i18n="about_pola_taitle">About POLA</h3>
+                    <p data-i18n="about_pola_text">Founded in 2013, POLA has revolutionized the sunglasses industry by offering high-quality designer sunglasses at affordable prices. Our mission is to provide stylish, durable eyewear that doesn't break the bank.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="shop_foot">Shop</h3>
+                    <ul>
+                        <li data-i18n="New_Arrivals_foot"><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li data-i18n="Classic_foot"><a href="classic-collection.html">Classic Collection</a></li>
+                        <li data-i18n="Spring_Summer_foot"><a href="spring-summer.html">Spring/Summer 2025</a></li>
+                        <li data-i18n="Fall_Winter_foot"><a href="fall-winter.html">Fall/Winter 2025</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="help_foot">Help</h3>
+                    <ul>
+                        <li data-i18n="FAQ_foot"><a href="#">FAQs</a></li>
+                        <li data-i18n="Size_Guide_foot"><a href="#">Size Guide</a></li>
+                        <li data-i18n="privacy_policy_foot"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="contact_us_foot">Contact US</h3>
+                    <ul>
+                        <li><a href="mailto:support@pola.com">support@pola.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 POLA. All rights reserved. <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/collections.js"></script>
+</body>
+</html> 
