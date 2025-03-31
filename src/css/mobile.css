@@ -40,10 +40,13 @@
     /* Header Adjustments */
     .main-header {
         padding: 15px 0;
-        justify-content: space-between;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        align-items: center;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     /* Hide search and language buttons in mobile */
@@ -51,25 +54,20 @@
         display: none !important;
     }
 
-    /* Center the POLA logo - 跨浏览器兼容方案 */
+    /* Center the POLA logo */
     .logo {
-        grid-column: 2 !important;
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
         margin: 0 !important;
-        justify-self: center !important;
         text-align: center !important;
-        /* 移除复杂的flex布局,采用更简单的方式 */
-        display: block !important;
-        width: 100% !important;
+        z-index: 1 !important;
     }
     
-    /* 单独处理链接文本居中 */
     .logo a {
-        display: inline-block !important;
+        display: block !important;
         text-align: center !important;
-        width: 100% !important;
-        left: 0 !important;
-        right: 0 !important;
-        margin: 0 auto !important;
+        white-space: nowrap !important;
     }
 
     /* Hide desktop navigation */
@@ -79,7 +77,7 @@
 
     /* Style mobile toggle button */
     .mobile-toggle {
-        display: flex !important; /* Only show on mobile */
+        display: flex !important;
         background: none;
         border: none;
         font-size: 24px;
@@ -90,14 +88,15 @@
         width: 40px;
         align-items: center;
         justify-content: center;
-        grid-column: 1;
-        justify-self: start;
+        padding: 0;
     }
 
     .header-icons {
-        grid-column: 3;
-        justify-self: end;
-        margin-right: 0;
+        position: relative;
+        z-index: 2;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
         gap: 15px;
     }
 
@@ -358,8 +357,8 @@
 
     .mobile-only {
         display: block !important; /* Show container on mobile */
-        grid-column: 1;
-        justify-self: start;
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -1162,4 +1161,70 @@
     width: 100% !important; /* 确保宽度正确 */
     text-decoration: none !important; /* 确保没有下划线 */
     transition: color 0.3s ease; /* 添加过渡效果 */
+}
+
+/* Hero Section Background */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 822px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Responsive Hero Background */
+@media only screen and (max-width: 1200px) {
+    .hero {
+        height: 700px;
+        background-position: center 20%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero {
+        height: 500px;
+        background-position: center 30%;
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero {
+        height: 400px;
+        background-position: center 25%;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .hero {
+        height: 350px;
+        background-position: center 20%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero {
+        height: 300px;
+    }
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        height: calc(100vh - var(--vh-offset, 0px));
+        min-height: 300px;
+    }
 } 
