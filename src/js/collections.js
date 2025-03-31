@@ -5,7 +5,7 @@ const productData = {
             id: 'NA001',
             name: 'Modern Aviator',
             price: 89.00,
-            images: ['/src/img/1-1.jpg', '/src/img/1-2.jpg'],
+            images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'Aviator'
         },
@@ -13,7 +13,7 @@ const productData = {
             id: 'NA002',
             name: 'Modern Aviator',
             price: 89.00,
-            images: ['/src/img/1-1.jpg', '/src/img/1-2.jpg'],
+            images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'Aviator'
         },
@@ -21,7 +21,7 @@ const productData = {
             id: 'NA003',
             name: 'Modern Aviator',
             price: 89.00,
-            images: ['/src/img/1-1.jpg', '/src/img/1-2.jpg'],
+            images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'Aviator'
         },
@@ -29,7 +29,7 @@ const productData = {
             id: 'NA004',
             name: 'Modern Aviator',
             price: 89.00,
-            images: ['/src/img/1-1.jpg', '/src/img/1-2.jpg'],
+            images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'Aviator'
         },
@@ -37,7 +37,7 @@ const productData = {
             id: 'NA005',
             name: 'Modern Aviator',
             price: 89.00,
-            images: ['/src/img/1-1.jpg', '/src/img/1-2.jpg'],
+            images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'Aviator'
         },
@@ -45,7 +45,7 @@ const productData = {
             id: 'NA006',
             name: 'Modern Aviator',
             price: 89.00,
-            images: ['/src/img/1-1.jpg', '/src/img/1-2.jpg'],
+            images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'Aviator'
         }
@@ -55,15 +55,15 @@ const productData = {
             id: 'CL001',
             name: 'Classic Wayfarer',
             price: 79.00,
-            images: ['/src/img/2-1.jpg', '/src/img/2-2.jpg'],
+            images: ['img/2-1.jpg', 'img/2-2.jpg'],
             colors: ['#000000', '#6d351a'],
             category: 'Wayfarer'
         },
-        {
+        { 
             id: 'CL002',
             name: 'Classic Wayfarer',
             price: 79.00,
-            images: ['/src/img/2-1.jpg', '/src/img/2-2.jpg'],
+            images: ['img/2-1.jpg', 'img/2-2.jpg'],
             colors: ['#000000', '#6d351a'],
             category: 'Wayfarer'
         },
@@ -71,7 +71,7 @@ const productData = {
             id: 'CL003',
             name: 'Classic Wayfarer',
             price: 79.00,
-            images: ['/src/img/2-1.jpg', '/src/img/2-2.jpg'],
+            images: ['img/2-1.jpg', 'img/2-2.jpg'],
             colors: ['#000000', '#6d351a'],
             category: 'Wayfarer'
         },
@@ -79,7 +79,7 @@ const productData = {
             id: 'CL004',
             name: 'Classic Wayfarer',
             price: 79.00,
-            images: ['/src/img/2-1.jpg', '/src/img/2-2.jpg'],
+            images: ['img/2-1.jpg', 'img/2-2.jpg'],
             colors: ['#000000', '#6d351a'],
             category: 'Wayfarer'
         }   
@@ -89,7 +89,7 @@ const productData = {
             id: 'SS001',
             name: 'Summer Breeze',
             price: 99.00,
-            images: ['/src/img/3-1.jpg', '/src/img/3-2.jpg'],
+            images: ['img/3-1.jpg', 'img/3-2.jpg'],
             colors: ['#f6b26b', '#000000'],
             category: 'Round'
         },
@@ -100,7 +100,7 @@ const productData = {
             id: 'FW001',
             name: 'Winter Classic',
             price: 89.00,
-            images: ['/src/img/4-1.jpg', '/src/img/4-2.jpg'],
+            images: ['img/4-1.jpg', 'img/4-2.jpg'],
             colors: ['#000000', '#6aa84f'],
             category: 'Oversized'
         },
