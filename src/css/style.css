@@ -562,13 +562,50 @@
         
         /* Hero Section */
         .hero {
-            height: 100vh;
+            height: 822px; /* 默认桌面端高度 */
             background-image: url('https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
             position: relative;
+        }
+        
+        /* 平板设备 */
+        @media screen and (max-width: 1024px) {
+            .hero {
+                height: 600px;
+            }
+        }
+        
+        /* 移动设备 */
+        @media screen and (max-width: 768px) {
+            .hero {
+                height: 500px;
+            }
+            
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+        }
+        
+        /* 小屏移动设备 */
+        @media screen and (max-width: 480px) {
+            .hero {
+                height: 400px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 14px;
+            }
         }
         
         .hero::before {
@@ -984,6 +1021,7 @@
                 height: 35px;
             }
         }
+        
         
         @media (max-width: 576px) {
             .featured .product-grid {
