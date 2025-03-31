@@ -131,14 +131,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add mobile menu toggle functionality
     if (mobileToggle) {
-        mobileToggle.addEventListener('click', function() {
+        console.log('Adding click event to mobile toggle');
+        mobileToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Mobile toggle clicked');
+            
             // Ensure mobile menu exists
             if (!mobileMenu) {
                 console.error('Mobile menu not found');
-                return;
+                // 尝试再次查找
+                const mobileMenuRetry = document.querySelector('.mobile-menu');
+                if (!mobileMenuRetry) {
+                    console.error('Mobile menu still not found after retry');
+                    return;
+                } else {
+                    console.log('Mobile menu found on retry');
+                    mobileMenu = mobileMenuRetry;
+                }
             }
             
-            // Toggle the mobile menu
+            console.log('Showing mobile menu');
+            
+            // 直接设置显示
+            mobileMenu.style.display = 'block';
             mobileMenu.classList.add('active');
             document.body.style.overflow = 'hidden';
             
@@ -158,6 +173,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 newOverlay.addEventListener('click', closeMobileMenu);
             }
         });
+    } else {
+        console.error('Mobile toggle button not found!');
     }
     
     if (menuClose) {
@@ -168,6 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!mobileMenu) return;
         
         mobileMenu.classList.remove('active');
+        mobileMenu.style.display = 'none';
         document.body.style.overflow = '';
         const overlay = document.querySelector('.overlay');
         if (overlay) {
