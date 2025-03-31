@@ -11,11 +11,44 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuClose = document.querySelector('.menu-close');
     const header = document.querySelector('header');
     
+    // Initialize mobile menu with main navigation
+    initMobileMenu();
+    
     // Create pull-to-refresh element
     const pullToRefresh = document.createElement('div');
     pullToRefresh.className = 'pull-to-refresh';
     pullToRefresh.innerHTML = '<div class="pull-to-refresh-spinner"></div>';
     document.body.appendChild(pullToRefresh);
+    
+    // Function to initialize mobile menu with main navigation links
+    function initMobileMenu() {
+        if (mobileMenu) {
+            const mobileNav = mobileMenu.querySelector('.mobile-nav');
+            if (mobileNav) {
+                const mainNav = document.querySelector('header nav ul');
+                if (mainNav) {
+                    // Create a new list for main navigation links
+                    const mainLinks = document.createElement('ul');
+                    mainLinks.className = 'main-links';
+                    
+                    // Clone nav items from main navigation
+                    const mainNavItems = mainNav.querySelectorAll('li');
+                    mainNavItems.forEach(item => {
+                        const clone = item.cloneNode(true);
+                        mainLinks.appendChild(clone);
+                    });
+                    
+                    // Insert the main links before existing mobile menu items
+                    const existingList = mobileNav.querySelector('ul');
+                    if (existingList) {
+                        mobileNav.insertBefore(mainLinks, existingList);
+                    } else {
+                        mobileNav.appendChild(mainLinks);
+                    }
+                }
+            }
+        }
+    }
     
     // Add header shadow on scroll for mobile
     if (window.innerWidth <= 992) {
