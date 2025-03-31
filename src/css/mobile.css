@@ -7,8 +7,8 @@
     display: none !important;
 }
 
-.mobile-toggle {
-    display: none;
+.mobile-only, .mobile-toggle {
+    display: none !important; /* Completely hide on desktop */
 }
 
 @media only screen and (max-width: 992px) {
@@ -69,7 +69,7 @@
 
     /* Style mobile toggle button */
     .mobile-toggle {
-        display: flex !important;
+        display: flex !important; /* Only show on mobile */
         background: none;
         border: none;
         font-size: 24px;
@@ -78,7 +78,6 @@
         z-index: 101;
         height: 40px;
         width: 40px;
-        display: flex;
         align-items: center;
         justify-content: center;
         grid-column: 1;
@@ -298,6 +297,12 @@
     
     .product-card:active .product-image-hover {
         opacity: 1;
+    }
+
+    .mobile-only {
+        display: block !important; /* Show container on mobile */
+        grid-column: 1;
+        justify-self: start;
     }
 }
 

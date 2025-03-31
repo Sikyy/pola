@@ -13,6 +13,9 @@
 </head>
     <!-- 更新CF打包路径--SRC -->
 <body>
+    <!-- Overlay for mobile menu and cart -->
+    <div class="overlay"></div>
+    
     <!-- Top Bar -->
     <div class="top-bar">
         <div data-i18n="free_shipping">POLA</div>
@@ -21,7 +24,10 @@
     <!-- Header -->
     <header>
         <div class="container main-header">
-            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+            <!-- Mobile toggle button - hidden on desktop -->
+            <div class="mobile-only">
+                <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+            </div>
             <div class="logo">
                 <a href="index.html">POLA</a>
             </div>
@@ -64,6 +70,12 @@
     <div class="mobile-menu">
         <button class="menu-close"><i class="fas fa-times"></i></button>
         <nav class="mobile-nav">
+            <ul class="main-links">
+                <li><a href="new-arrivals.html" data-i18n="new_arrivals">New Arrivals</a></li>
+                <li><a href="classic-collection.html" data-i18n="classic_collection">Classic Collection</a></li>
+                <li><a href="spring-summer.html" data-i18n="spring_summer">Spring/Summer 2025</a></li>
+                <li><a href="fall-winter.html" data-i18n="fall_winter">Fall/Winter 2025</a></li>
+            </ul>
             <ul>
                 <li>
                     <a href="#" data-i18n="sunglasses">Sunglasses</a>

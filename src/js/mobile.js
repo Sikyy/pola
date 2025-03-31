@@ -32,57 +32,58 @@ document.addEventListener('DOMContentLoaded', function() {
             const mobileNav = mobileMenu.querySelector('.mobile-nav');
             console.log('Mobile nav found:', !!mobileNav);
             if (mobileNav) {
-                // Fix: Check if main links already exist
-                if (!mobileNav.querySelector('.main-links')) {
-                    console.log('Creating main links');
-                    
-                    // Always manually add the links to ensure they appear
-                    const mainLinks = document.createElement('ul');
-                    mainLinks.className = 'main-links';
-                    
-                    // Add a title before the links
-                    const title = document.createElement('h3');
-                    title.className = 'mobile-nav-title';
-                    title.textContent = 'Main Navigation';
-                    mobileNav.appendChild(title);
-                    
-                    // Create the navigation links manually
-                    const pages = [
-                        { href: 'new-arrivals.html', text: 'New Arrivals' },
-                        { href: 'classic-collection.html', text: 'Classic Collection' },
-                        { href: 'spring-summer.html', text: 'Spring/Summer 2025' },
-                        { href: 'fall-winter.html', text: 'Fall/Winter 2025' }
-                    ];
-                    
-                    pages.forEach(page => {
-                        const li = document.createElement('li');
-                        const a = document.createElement('a');
-                        a.href = page.href;
-                        a.textContent = page.text;
-                        
-                        // Check if this is the active page
-                        const currentPath = window.location.pathname;
-                        console.log('Current path:', currentPath);
-                        if (currentPath.includes(page.href) || 
-                            (currentPath.endsWith('/') && page.href === 'index.html')) {
-                            a.classList.add('active');
-                        }
-                        
-                        li.appendChild(a);
-                        mainLinks.appendChild(li);
-                    });
-                    
-                    // Insert the main links
-                    const existingList = mobileNav.querySelector('ul');
-                    if (existingList) {
-                        mobileNav.insertBefore(mainLinks, existingList);
-                    } else {
-                        mobileNav.appendChild(mainLinks);
-                    }
-                    console.log('Main links added to mobile menu');
-                } else {
+                // 如果main-links已经存在，则不需要创建
+                if (mobileNav.querySelector('.main-links')) {
                     console.log('Main links already exist');
+                    return;
                 }
+                
+                console.log('Creating main links');
+                
+                // Always manually add the links to ensure they appear
+                const mainLinks = document.createElement('ul');
+                mainLinks.className = 'main-links';
+                
+                // Add a title before the links
+                const title = document.createElement('h3');
+                title.className = 'mobile-nav-title';
+                title.textContent = 'Main Navigation';
+                mobileNav.appendChild(title);
+                
+                // Create the navigation links manually
+                const pages = [
+                    { href: 'new-arrivals.html', text: 'New Arrivals' },
+                    { href: 'classic-collection.html', text: 'Classic Collection' },
+                    { href: 'spring-summer.html', text: 'Spring/Summer 2025' },
+                    { href: 'fall-winter.html', text: 'Fall/Winter 2025' }
+                ];
+                
+                pages.forEach(page => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = page.href;
+                    a.textContent = page.text;
+                    
+                    // Check if this is the active page
+                    const currentPath = window.location.pathname;
+                    console.log('Current path:', currentPath);
+                    if (currentPath.includes(page.href) || 
+                        (currentPath.endsWith('/') && page.href === 'index.html')) {
+                        a.classList.add('active');
+                    }
+                    
+                    li.appendChild(a);
+                    mainLinks.appendChild(li);
+                });
+                
+                // Insert the main links
+                const existingList = mobileNav.querySelector('ul');
+                if (existingList) {
+                    mobileNav.insertBefore(mainLinks, existingList);
+                } else {
+                    mobileNav.appendChild(mainLinks);
+                }
+                console.log('Main links added to mobile menu');
             }
         }
     }
@@ -164,6 +165,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function closeMobileMenu() {
+        if (!mobileMenu) return;
+        
         mobileMenu.classList.remove('active');
         document.body.style.overflow = '';
         const overlay = document.querySelector('.overlay');

@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
+    <!-- Overlay for mobile menu and cart -->
+    <div class="overlay"></div>
+    
     <!-- Top Bar -->
     <div class="top-bar">
         <div data-i18n="free_shipping">Spring/Summer 2025</div>
@@ -21,7 +24,10 @@
     <!-- Header -->
     <header>
         <div class="container main-header">
-            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+            <!-- Mobile toggle button - hidden on desktop -->
+            <div class="mobile-only">
+                <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+            </div>
             <div class="logo">
                 <a href="index.html">POLA</a>
             </div>
@@ -59,6 +65,68 @@
             </div>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="menu-close"><i class="fas fa-times"></i></button>
+        <nav class="mobile-nav">
+            <ul class="main-links">
+                <li><a href="new-arrivals.html" data-i18n="new_arrivals">New Arrivals</a></li>
+                <li><a href="classic-collection.html" data-i18n="classic_collection">Classic Collection</a></li>
+                <li><a href="spring-summer.html" data-i18n="spring_summer">Spring/Summer 2025</a></li>
+                <li><a href="fall-winter.html" data-i18n="fall_winter">Fall/Winter 2025</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" data-i18n="sunglasses">Sunglasses</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="eyeglasses">Eyeglasses</a>
+                </li>
+                <li>
+                    <a href="#" data-i18n="collections">Collections</a>
+                </li>
+                <li><a href="#" data-i18n="sale">Sale</a></li>
+                <li><a href="#" data-i18n="my_account">My Account</a></li>
+                <li><a href="#" data-i18n="contact_us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <h2 class="search-title" data-i18n="search">Search</h2>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="search-form">
+                <input type="text" class="search-input" data-i18n="search_placeholder" placeholder="Search for products...">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2 class="cart-title">Your Cart (0)</h2>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <p style="text-align: center; color: var(--gray-dark);" data-i18n="cart_empty">Your cart is empty</p>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-subtotal">
+                <span data-i18n="subtotal">Subtotal</span>
+                <span class="subtotal-price">€0.00</span>
+            </div>
+            <div class="cart-buttons">
+                <button class="cart-btn checkout-btn" data-i18n="checkout">Checkout</button>
+                <button class="cart-btn view-cart-btn" data-i18n="view_cart">View Cart</button>
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="collection-page">
