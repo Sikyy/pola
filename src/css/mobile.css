@@ -970,7 +970,7 @@
     .menu-close,
     .search-close,
     .cart-close {
-        min-height: 44px; /* Apple's recommended minimum touch target size */
+        min-height: 24px; /* Apple's recommended minimum touch target size */
     }
 
     /* Increase spacing between clickable elements */
