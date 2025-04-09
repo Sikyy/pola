@@ -48,7 +48,15 @@ const productData = {
             images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'Aviator'
-        }
+        },
+        {
+            id: 'NA006',
+            name: 'Modern Aviator',
+            price: 89.00,
+            images: ['img/1-3.jpg', 'img/1-4.jpg'],
+            colors: ['#000000', '#3d85c6', '#b45f06'],
+            category: 'Aviator'
+        },
     ],
     classic: [
         {
