@@ -1321,10 +1321,18 @@
             color: var(--secondary-color);
             font-size: 16px;
             transition: color 0.3s ease;
+            align-items: center; /* 垂直居中 */
         }
         
         .social-links a:hover {
             color: var(--accent-color);
+        }
+
+        /* 为 SVG 添加特定样式 */
+        .social-links svg.icon {
+            width: 24px; 
+            height: 24px;
+            fill: currentColor; /* 跟随父元素的颜色 */
         }
         
         .app-download {
