@@ -95,13 +95,68 @@ const productData = {
     springSummer: [
         {
             id: 'SS001',
-            name: 'Summer Breeze',
-            price: 99.00,
+            name: 'OSM200648',
+            price: 59.99,
             images: ['img/3-1.jpg', 'img/3-2.jpg'],
             colors: ['#f6b26b', '#000000'],
-            category: 'Round'
+            category: 'springSummer'
         },
-        // Add more products...
+        {
+            id: 'SS001',
+            name: 'OSA200472',
+            price: 79.99,
+            images: ['img/3-3.jpg', 'img/3-4.jpg'],
+            colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS001',
+            name: 'OSM200630',
+            price: 59.99,
+            images: ['img/3-5.jpg', 'img/3-6.jpg'],
+            colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS001',
+            name: 'OSM200708',
+            price: 59.99,
+            images: ['img/3-7.jpg', 'img/3-8.jpg'],
+            colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS001',
+            name: 'OSM200709',
+            price: 59.99,
+            images: ['img/3-9.jpg', 'img/3-10.jpg'],
+            colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS001',
+            name: 'OSM200710',
+            price: 59.99,
+            images: ['img/3-11.jpg', 'img/3-12.jpg'],
+            colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS001',
+            name: 'OSM200713',
+            price: 59.99,
+            images: ['img/3-13.jpg', 'img/3-14.jpg'],
+            colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS001',
+            name: 'OSM208120',
+            price: 59.99,
+            images: ['img/3-15.jpg', 'img/3-16.jpg'],
+            colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },// Add more products...
     ],
     fallWinter: [
         {
