@@ -21,7 +21,7 @@ const productData = {
             id: 'NA003',
             name: 'OSM200648',
             price: 59.99,
-            images: ['img/1-5.jpg', 'img/1-6.jpg'],
+            images: ['img/1-5.JPG', 'img/1-6.JPG'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'newArrivals'
         },
