@@ -6,7 +6,7 @@ const productData = {
             name: 'MS20003',
             price: 59.99,
             images: ['img/1-1.jpg', 'img/1-2.jpg'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#5a4221', '#b9a39d', ],
             category: 'newArrivals'
         },
         {
