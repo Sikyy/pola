@@ -102,7 +102,7 @@ const productData = {
             category: 'springSummer'
         },
         {
-            id: 'SS001',
+            id: 'SS002',
             name: 'OSA200472',
             price: 79.99,
             images: ['img/3-3.jpg', 'img/3-4.jpg'],
@@ -110,7 +110,7 @@ const productData = {
             category: 'springSummer'
         },
         {
-            id: 'SS001',
+            id: 'SS003',
             name: 'OSM200630',
             price: 59.99,
             images: ['img/3-5.jpg', 'img/3-6.jpg'],
@@ -118,7 +118,7 @@ const productData = {
             category: 'springSummer'
         },
         {
-            id: 'SS001',
+            id: 'SS004',
             name: 'OSM200708',
             price: 59.99,
             images: ['img/3-7.jpg', 'img/3-8.jpg'],
@@ -126,7 +126,7 @@ const productData = {
             category: 'springSummer'
         },
         {
-            id: 'SS001',
+            id: 'SS005',
             name: 'OSM200709',
             price: 59.99,
             images: ['img/3-9.jpg', 'img/3-10.jpg'],
@@ -134,7 +134,7 @@ const productData = {
             category: 'springSummer'
         },
         {
-            id: 'SS001',
+            id: 'SS006',
             name: 'OSM200710',
             price: 59.99,
             images: ['img/3-11.jpg', 'img/3-12.jpg'],
@@ -142,7 +142,7 @@ const productData = {
             category: 'springSummer'
         },
         {
-            id: 'SS001',
+            id: 'SS007',
             name: 'OSM200713',
             price: 59.99,
             images: ['img/3-13.jpg', 'img/3-14.jpg'],
@@ -150,7 +150,7 @@ const productData = {
             category: 'springSummer'
         },
         {
-            id: 'SS001',
+            id: 'SS008',
             name: 'OSM208120',
             price: 59.99,
             images: ['img/3-15.jpg', 'img/3-16.jpg'],
