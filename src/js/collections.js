@@ -5,7 +5,7 @@ const productData = {
             id: 'NA001',
             name: 'MS20003',
             price: 59.99,
-            images: ['img/1-1.JPG', 'img/1-2.JPG'],
+            images: ['img/1-1.jpg', 'img/1-2.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'newArrivals'
         },
@@ -13,7 +13,7 @@ const productData = {
             id: 'NA002',
             name: 'OSM200630',
             price: 59.99,
-            images: ['img/1-3.JPG', 'img/1-4.JPG'],
+            images: ['img/1-3.jpg', 'img/1-4.jpg'],
             colors: ['#000000', '#3d85c6', '#b45f06'],
             category: 'newArrivals'
         },
@@ -71,7 +71,7 @@ const productData = {
             id: 'CL001',
             name: 'OSA200470',
             price: 79.99,
-            images: ['img/2-1.JPG', 'img/2-2.JPG'],
+            images: ['img/2-1.jpg', 'img/2-2.jpg'],
             colors: ['#000000', '#6d351a'],
             category: 'classic'
         },
@@ -169,7 +169,7 @@ const productData = {
             id: 'SS001',
             name: 'OSM200648',
             price: 59.99,
-            images: ['img/3-1.JPG', 'img/3-2.JPG'],
+            images: ['img/3-1.jpg', 'img/3-2.jpg'],
             colors: ['#f6b26b', '#000000'],
             category: 'springSummer'
         },
@@ -251,7 +251,7 @@ const productData = {
             id: 'FW001',
             name: 'OSA200470',
             price: 79.99,
-            images: ['img/4-1.JPG', 'img/4-2.JPG'],
+            images: ['img/4-1.jpg', 'img/4-2.jpg'],
             colors: ['#000000', '#6aa84f'],
             category: 'fallWinter'
         },
