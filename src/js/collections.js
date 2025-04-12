@@ -6,7 +6,7 @@ const productData = {
             name: 'MS20003',
             price: 59.99,
             images: ['img/1-1.jpg', 'img/1-2.jpg'],
-            colors: ['#5a4221', '#b9a39d', ],
+            colors: ['#5a4221', '#b9a39d'],
             category: 'newArrivals'
         },
         {
@@ -14,7 +14,7 @@ const productData = {
             name: 'OSM200630',
             price: 59.99,
             images: ['img/1-3.jpg', 'img/1-4.jpg'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#7b6340', '#b5a298', '#3f496f'],
             category: 'newArrivals'
         },
         {
@@ -22,7 +22,7 @@ const productData = {
             name: 'OSM200648',
             price: 59.99,
             images: ['img/1-5.JPG', 'img/1-6.JPG'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#5f3c57', '#86774f', '#4f4930'],
             category: 'newArrivals'
         },
         {
@@ -30,7 +30,7 @@ const productData = {
             name: 'OSM200703',
             price: 79.99,
             images: ['img/1-7.JPG', 'img/1-8.JPG'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#424242', '#74665f', '#3d4146'],
             category: 'newArrivals'
         },
         {
@@ -38,7 +38,7 @@ const productData = {
             name: 'OSM200706',
             price: 59.99,
             images: ['img/1-9.JPG', 'img/1-10.JPG'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#515355', '#5a4d26'],
             category: 'newArrivals'
         },
         {
@@ -46,7 +46,7 @@ const productData = {
             name: 'OSM200709',
             price: 59.99,
             images: ['img/1-11.JPG', 'img/1-12.JPG'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#a7a390', '#54422a', ],
             category: 'newArrivals'
         },
         {
@@ -54,7 +54,7 @@ const productData = {
             name: 'OSM200710',
             price: 59.99,
             images: ['img/1-13.JPG', 'img/1-14.JPG'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#6c4613', '#534c3a', '#373647', '#724f63'],
             category: 'newArrivals'
         },
         {
@@ -62,7 +62,7 @@ const productData = {
             name: 'R16M163J1',
             price: 59.99,
             images: ['img/1-15.JPG', 'img/1-16.JPG'],
-            colors: ['#000000', '#3d85c6', '#b45f06'],
+            colors: ['#303828', '#3b404d', '#897354', '#45422c'],
             category: 'newArrivals'
         },
     ],
@@ -72,7 +72,7 @@ const productData = {
             name: 'OSA200470',
             price: 79.99,
             images: ['img/2-1.jpg', 'img/2-2.jpg'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#766651', '#575a62', '#41331f'],
             category: 'classic'
         },
         { 
@@ -80,7 +80,7 @@ const productData = {
             name: 'OSA200472',
             price: 79.99,
             images: ['img/2-3.JPG', 'img/2-4.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#615b61', '#5e504b', '#927a83','#48526b'],
             category: 'classic'
         },
         {   
@@ -88,7 +88,7 @@ const productData = {
             name: 'OSM200663',
             price: 59.99,
             images: ['img/2-5.JPG', 'img/2-6.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#4d3929', '#4d473e', '#2e1f12'],
             category: 'classic'
         },
         {
@@ -96,7 +96,7 @@ const productData = {
             name: 'OSM200704',
             price: 59.99,
             images: ['img/2-7.JPG', 'img/2-8.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#413c2c', '#636a6d'],
             category: 'classic'
         }, 
         {
@@ -104,7 +104,7 @@ const productData = {
             name: 'OSM200705',
             price: 59.99,
             images: ['img/2-9.JPG', 'img/2-10.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#4e5051', '#60512a'],
             category: 'classic'
         },
         {
@@ -112,7 +112,7 @@ const productData = {
             name: 'OSM200708',
             price: 59.99,
             images: ['img/2-11.JPG', 'img/2-12.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#d2b828', '#263544'],
             category: 'classic'
         },
         {
@@ -120,7 +120,7 @@ const productData = {
             name: 'OSM200713',
             price: 59.99,
             images: ['img/2-13.JPG', 'img/2-14.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#65362b', '#363725','#373542'],
             category: 'classic'
         },
         {
@@ -128,7 +128,7 @@ const productData = {
             name: 'osm200715',
             price: 79.99,
             images: ['img/2-15.JPG', 'img/2-16.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#484a4e', '#6d5d3c','#ccb34e'],
             category: 'classic'
         },
         {
@@ -136,7 +136,7 @@ const productData = {
             name: 'OSM208041A1',
             price: 59.99,
             images: ['img/2-17.JPG', 'img/2-18.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#22303b', '#a0806d','#22302a'],
             category: 'classic'
         },
         {
@@ -144,15 +144,15 @@ const productData = {
             name: 'OSM208120',
             price: 59.99,
             images: ['img/2-19.JPG', 'img/2-20.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#725f41', '#2c3944','#42504c'],
             category: 'classic'
         },
         {
             id: 'CL011',
-            name: 'OSM208120',
+            name: 'OSM208121',
             price: 59.99,
             images: ['img/2-21.JPG', 'img/2-22.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#725f41', '#2c3944','#42504c'],
             category: 'classic'
         },
         {
@@ -160,7 +160,7 @@ const productData = {
             name: 'OSM208211A1',
             price: 59.99,
             images: ['img/2-23.JPG', 'img/2-24.JPG'],
-            colors: ['#000000', '#6d351a'],
+            colors: ['#57442d', '#3a3536','#333d5c'],
             category: 'classic'
         },  
     ],
@@ -170,7 +170,7 @@ const productData = {
             name: 'OSM200648',
             price: 59.99,
             images: ['img/3-1.jpg', 'img/3-2.jpg'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#5f3c57', '#86774f', '#4f4930'],
             category: 'springSummer'
         },
         {
@@ -178,7 +178,7 @@ const productData = {
             name: 'OSA200472',
             price: 79.99,
             images: ['img/3-3.JPG', 'img/3-4.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#615b61', '#5e504b', '#927a83','#48526b'],
             category: 'springSummer'
         },
         {
@@ -186,7 +186,7 @@ const productData = {
             name: 'OSM200630',
             price: 59.99,
             images: ['img/3-5.JPG', 'img/3-6.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#7b6340', '#b5a298', '#3f496f'],
             category: 'springSummer'
         },
         {
@@ -194,7 +194,7 @@ const productData = {
             name: 'OSM200708',
             price: 59.99,
             images: ['img/3-7.JPG', 'img/3-8.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#d2b828', '#263544'],
             category: 'springSummer'
         },
         {
@@ -202,7 +202,7 @@ const productData = {
             name: 'OSM200709',
             price: 59.99,
             images: ['img/3-9.JPG', 'img/3-10.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#a7a390', '#54422a' ],
             category: 'springSummer'
         },
         {
@@ -210,7 +210,7 @@ const productData = {
             name: 'OSM200710',
             price: 59.99,
             images: ['img/3-11.JPG', 'img/3-12.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#6c4613', '#534c3a', '#373647', '#724f63'],
             category: 'springSummer'
         },
         {
@@ -218,7 +218,7 @@ const productData = {
             name: 'OSM200713',
             price: 59.99,
             images: ['img/3-13.JPG', 'img/3-14.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#65362b', '#363725','#373542'],
             category: 'springSummer'
         },
         {
@@ -226,7 +226,7 @@ const productData = {
             name: 'OSM208120',
             price: 59.99,
             images: ['img/3-15.JPG', 'img/3-16.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#725f41', '#2c3944','#42504c'],
             category: 'springSummer'
         },
         {
@@ -252,7 +252,7 @@ const productData = {
             name: 'OSA200470',
             price: 79.99,
             images: ['img/4-1.jpg', 'img/4-2.jpg'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#766651', '#575a62', '#41331f'],
             category: 'fallWinter'
         },
         {
@@ -260,7 +260,7 @@ const productData = {
             name: 'OSM200663',
             price: 59.99,
             images: ['img/4-3.JPG', 'img/4-4.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#4d3929', '#4d473e', '#2e1f12'],
             category: 'fallWinter'
         },
         {
@@ -268,7 +268,7 @@ const productData = {
             name: 'OSM200703',
             price: 79.99,
             images: ['img/4-5.JPG', 'img/4-6.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#424242', '#74665f', '#3d4146'],
             category: 'fallWinter'
         },
         {
@@ -276,7 +276,7 @@ const productData = {
             name: 'OSM200704',
             price: 59.99,
             images: ['img/4-7.JPG', 'img/4-8.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#413c2c', '#636a6d'],
             category: 'fallWinter'
         },
         {
@@ -284,7 +284,7 @@ const productData = {
             name: 'OSM200705',
             price: 59.99,
             images: ['img/4-9.JPG', 'img/4-10.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#4e5051', '#60512a'],
             category: 'fallWinter'
         },
         {
@@ -292,7 +292,7 @@ const productData = {
             name: 'OSM200706',
             price: 59.99,
             images: ['img/4-11.JPG', 'img/4-12.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#515355', '#5a4d26'],
             category: 'fallWinter'
         },
         {
@@ -300,7 +300,7 @@ const productData = {
             name: 'OSM200715',
             price: 59.99,
             images: ['img/4-13.JPG', 'img/4-14.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#484a4e', '#6d5d3c','#ccb34e'],
             category: 'fallWinter'
         },
         {
@@ -308,7 +308,7 @@ const productData = {
             name: 'OSM208041A1',
             price: 59.99,
             images: ['img/4-15.JPG', 'img/4-16.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#22303b', '#a0806d','#22302a'],
             category: 'fallWinter'
         },
         {
@@ -316,7 +316,7 @@ const productData = {
             name: 'OSM208121',
             price: 59.99,
             images: ['img/4-17.JPG', 'img/4-18.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#725f41', '#2c3944','#42504c'],
             category: 'fallWinter'
         },
         {
@@ -324,7 +324,7 @@ const productData = {
             name: 'OSM208211A1',
             price: 59.99,
             images: ['img/4-19.JPG', 'img/4-20.JPG'],
-            colors: ['#000000', '#6aa84f'],
+            colors: ['#57442d', '#3a3536','#333d5c'],
             category: 'fallWinter'
         },// Add more products...
     ]
