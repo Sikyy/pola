@@ -65,6 +65,22 @@ const productData = {
             colors: ['#303828', '#3b404d', '#897354', '#45422c'],
             category: 'newArrivals'
         },
+        {
+            id: 'NA009',
+            name: 'GD-PS20036',
+            price: 39.99,
+            images: ['img/1-17.JPG', 'img/1-18.JPG'],
+            colors: ['#595a5f', '#8a959a'],
+            category: 'newArrivals'
+        },
+        {
+            id: 'NA010',
+            name: 'GD-200PS50',
+            price: 39.99,
+            images: ['img/1-19.JPG', 'img/1-20.JPG'],
+            colors: ['#777b6e', '#416ecb'],
+            category: 'newArrivals'
+        },
     ],
     classic: [
         {
@@ -234,7 +250,7 @@ const productData = {
             name: 'R16M163J1',
             price: 59.99,
             images: ['img/3-17.JPG', 'img/3-18.JPG'],
-            colors: ['#f6b26b', '#000000'],
+            colors: ['#283324', '#383d4b','#5f4929','#494530'],
             category: 'springSummer'
         },
         {
@@ -243,6 +259,46 @@ const productData = {
             price: 59.99,
             images: ['img/3-19.JPG', 'img/3-20.JPG'],
             colors: ['#f6b26b', '#000000'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS011',
+            name: 'GD-AS20010',
+            price: 99.99,
+            images: ['img/3-21.JPG', 'img/3-22.JPG'],
+            colors: ['#805e52', '#505048'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS012',
+            name: 'GD-AS20017',
+            price: 99.99,
+            images: ['img/3-23.JPG', 'img/3-24.JPG'],
+            colors: ['#f6b26b', '#456b82','#616f79'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS013',
+            name: 'GD-PS20036',
+            price: 39.99,
+            images: ['img/3-25.JPG', 'img/3-26.JPG'],
+            colors: ['#606366', '#8a9597'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS014',
+            name: 'GD-PS20049',
+            price: 39.99,
+            images: ['img/3-27.JPG', 'img/3-28.JPG'],
+            colors: ['#717b7e', '#3f94d1'],
+            category: 'springSummer'
+        },
+        {
+            id: 'SS015',
+            name: 'GD-PS20050',
+            price: 39.99,
+            images: ['img/3-29.JPG', 'img/3-30.JPG'],
+            colors: ['#74786a', '#3f6cc9'],
             category: 'springSummer'
         },// Add more products...
     ],
@@ -325,6 +381,54 @@ const productData = {
             price: 59.99,
             images: ['img/4-19.JPG', 'img/4-20.JPG'],
             colors: ['#57442d', '#3a3536','#333d5c'],
+            category: 'fallWinter'
+        },
+        {
+            id: 'FW011',
+            name: 'GD-AS20007',
+            price: 99.99,
+            images: ['img/4-21.JPG', 'img/4-22.JPG'],
+            colors: ['#48644f', '#435e4c'],
+            category: 'fallWinter'
+        },
+        {
+            id: 'FW012',
+            name: 'GD-AS20008',
+            price: 99.99,
+            images: ['img/4-23.JPG', 'img/4-24.JPG'],
+            colors: ['#4b4841'],
+            category: 'fallWinter'
+        },
+        {
+            id: 'FW013',
+            name: 'GD-PS20031',
+            price: 39.99,
+            images: ['img/4-25.JPG', 'img/4-26.JPG'],
+            colors: ['#878f80', '#4e3725'],
+            category: 'fallWinter'
+        },
+        {
+            id: 'FW014',
+            name: 'GD-PS20061',
+            price: 59.99,
+            images: ['img/4-27.JPG', 'img/4-28.JPG'],
+            colors: ['#4f5a60'],
+            category: 'fallWinter'
+        },
+        {
+            id: 'FW015',
+            name: 'GD-PS20083',
+            price: 59.99,
+            images: ['img/4-29.JPG', 'img/4-30.JPG'],
+            colors: ['#5f6367'],
+            category: 'fallWinter'
+        },
+        {
+            id: 'FW016',
+            name: 'GD-PS20104',
+            price: 39.99,
+            images: ['img/4-31.JPG', 'img/4-32.JPG'],
+            colors: ['#616564'],
             category: 'fallWinter'
         },// Add more products...
     ]
