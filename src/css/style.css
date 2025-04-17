@@ -563,7 +563,7 @@
         /* Hero Section */
         .hero {
             height: 822px; /* 默认桌面端高度 */
-            background-image:url('/src/img/main1.jpg'); 
+            background-image:url('/src/img/main1.JPG'); 
             background-size: cover;
             background-position: center;
             display: flex;
