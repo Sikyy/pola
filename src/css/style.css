@@ -563,7 +563,7 @@
         /* Hero Section */
         .hero {
             height: 822px; /* 默认桌面端高度 */
-            background-image:url('/src/img/main1.JPG'); 
+            background-image:url('https://mjj.today/i/9lgmoG'); 
             background-size: cover;
             background-position: center;
             display: flex;
@@ -679,7 +679,7 @@
         .banner-title {
             font-size: 32px;
             font-weight: 700;
-            color: var(--secondary-color);
+            color:#000000;
             margin-bottom: 15px;
             text-transform: uppercase;
         }
